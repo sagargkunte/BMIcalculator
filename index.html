@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <marquee><h1>B M I Calculator</h1></marquee>
+      <form>
+        <div id="parent_height">
+        <i>
+            <label>Height In cm : </label><input type="text" id="height" />
+        </i>
+         <input list="height_units" id="height-units">
+        <datalist id="height_units">
+            <option value="cm">Centimeter</option>
+            <option value="feet">Feet</option>
+            <option value="m">Meter</option>
+            <option value="in">Inches</option>
+        </datalist>
+        </div>
+
+        <div id="parent_weight">
+        <i>
+            <label>Weight In cm : </label><input type="text" id="weight" />
+        </i>
+         <input list="weight_units" id="weight-units">
+        <datalist id="weight_units">
+            <option value="kg">Kilograms</option>
+            <option value="lb">Pounds</option>
+            <option value="st">Stones</option>
+        </datalist>
+        </div>
+        
+        <button>Calculate</button>
+
+        <div id="result"></div>
+        <div id="weight-guide">
+          <h3>B M I Weight Guide</h3>
+          <p>Under Weight = Less than 18.6</p>
+          <p>Normal Range = 18.6 and 24.9</p>
+          <p>Overweight = Greater than 24.9</p>
+        </div>
+
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
